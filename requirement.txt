@@ -1,0 +1,30 @@
+some help
+Here is some helping information guide to migrate: https://apimirror.com/tensorflow~guide/migrate
+
+
+
+
+Source
+https://github.com/R-Stefano/Grid-Cells
+
+Please look a little at this, the main file that need to be migrated is agent.py, the next is showGridCells.py
+
+showGridCells.py
+agent.py
+
+
+in main.py and trainer.py 
+
+is only some lines to be converted
+
+So You can transfer this code from TF1 to TF2?
+Yes, there is existing code. With knowledge about TensorFlow 1 and 2, it can be done quite fast.
+This package need to be converted to Tensorflow 2.7.0
+
+
+
+
+
+Migrate existing code packages 4 files of 6. Code is written in Tensorflow 1.14 version (Python 3.6) with low level TensorFlow APIs, need to migrate to TensorFlow 2.7.0 (Python 3.8) using Keras and Functional API for Model layers.
+Each file for migration is in the following code line lengths: file1: 128lines, file2 139lines, file3 104lines, file4 105lines.
+After migrating, code can`t use any tf.compat.v1 endpoints to access placeholders, sessions, collections and other TensorFlow 1.x-style functionality.
